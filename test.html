@@ -1,82 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Splide.js Slider Example</title>
-  <!-- Add Splide.js CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@next/dist/css/splide.min.css">
-  <style>
-    /* Custom CSS for the dropdowns */
-.dropdown {
-  margin-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 8px;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  padding: 8px;
-}
-
-.arrow-icon {
-  float: right;
-  transition: transform 0.3s;
-}
-
-.dropdown.open .arrow-icon {
-  transform: rotate(180deg);
-}
-
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!-- splide css -->
+      <link rel="stylesheet" href="assets/styles/splide.min.css">
+      <style>
+        /* Hide the navigation arrows for the Splide.js vertical slider */
+        .splide__arrow--prev,
+        .splide__arrow--next {
+          display: none;
+        }
+      </style>
+      
+  <title>Document</title> 
+  
 </head>
+<style>
+  
+</style>
 <body>
-  <section style="background-color: rgb(0, 0, 0);">
-    <div class="container p-3">
-      <h2 class="text-center" style="color: rgba(197, 158, 112, 1);">Glimpse of Kalasindhu</h2>
-      <div id="dropdown-container">
-        <!-- Dropdown 1 -->
-        <div class="dropdown">
-          <div class="dropdown-header" onclick="toggleDropdown(1)">
-            Dropdown 1 <i class="arrow-icon fas fa-chevron-down"></i>
+  <section class="abtHero-wrapper mt-0">
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="image-overlay">
+              <img src="assets/images/abt.png" alt="" srcset="" class="img-fluid mt-0">
+              <h1 class="choreographer-text">FOUNDER - DIRECTOR</h1>
           </div>
-          <div class="dropdown-content" id="dropdown-1-content">
-            <!-- Additional information for Dropdown 1 -->
-            Information for Dropdown 1.
+          <div class="container">
+              <div class="text-center mt-3">
+                  <h3 class="fw-bolder">Poornima Gururaja</h3>
+                  <p>Poornima Gururaja is an exponent of the Pandanallur/Tanjore School of dance, a disciple of Guru
+                      Smt. Narmada who trained under the legendary Guru Sri Kittappa Pillai of Tanjore. She is the
+                      founder and artistic director of the Pallavi School performing arts, based in Boston. She
+                      founded
+                      the Kalasindhu Academy of Dance and Related Arts in 2009. Poornima Gururaja holds an MBA from
+                      Brandeis University, USA and has worked as a marketing professional at Hewlett Packard.
+                  </p>
+              </div>
+          </div> 
+          </li>
+          <li class="splide__slide">
+            <div class="image-overlay">
+              <img src="assets/images/abt.png" alt="" srcset="" class="img-fluid mt-0">
+              <h1 class="choreographer-text">FOUNDER2 - DIRECTOR</h1>
           </div>
-        </div>
-  
-        <!-- Dropdown 2 -->
-        <div class="dropdown">
-          <div class="dropdown-header" onclick="toggleDropdown(2)">
-            Dropdown 2 <i class="arrow-icon fas fa-chevron-down"></i>
+          <div class="container">
+              <div class="text-center mt-3">
+                  <h3 class="fw-bolder">Poornima Gururaja</h3>
+                  <p>Poornima Gururaja is an exponent of the Pandanallur/Tanjore School of dance, a disciple of Guru
+                      Smt. Narmada who trained under the legendary Guru Sri Kittappa Pillai of Tanjore. She is the
+                      founder and artistic director of the Pallavi School performing arts, based in Boston. She
+                      founded
+                      the Kalasindhu Academy of Dance and Related Arts in 2009. Poornima Gururaja holds an MBA from
+                      Brandeis University, USA and has worked as a marketing professional at Hewlett Packard.
+                  </p>
+              </div>
           </div>
-          <div class="dropdown-content" id="dropdown-2-content">
-            <!-- Additional information for Dropdown 2 -->
-            Information for Dropdown 2.
+          </li>
+          <li class="splide__slide">
+            <div class="image-overlay">
+              <img src="assets/images/abt.png" alt="" srcset="" class="img-fluid mt-0">
+              <h1 class="choreographer-text">FOUNDER3 - DIRECTOR</h1>
           </div>
-        </div>
-  
-        <!-- Add more dropdowns here -->
-  
+          <div class="container">
+              <div class="text-center mt-3">
+                  <h3 class="fw-bolder">Poornima Gururaja</h3>
+                  <p>Poornima Gururaja is an exponent of the Pandanallur/Tanjore School of dance, a disciple of Guru
+                      Smt. Narmada who trained under the legendary Guru Sri Kittappa Pillai of Tanjore. She is the
+                      founder and artistic director of the Pallavi School performing arts, based in Boston. She
+                      founded
+                      the Kalasindhu Academy of Dance and Related Arts in 2009. Poornima Gururaja holds an MBA from
+                      Brandeis University, USA and has worked as a marketing professional at Hewlett Packard.
+                  </p>
+              </div>
+          </div>
+          </li><li class="splide__slide">
+            <div class="image-overlay">
+              <img src="assets/images/abt.png" alt="" srcset="" class="img-fluid mt-0">
+              <h1 class="choreographer-text">FOUNDER4 - DIRECTOR</h1>
+          </div>
+          <div class="container">
+              <div class="text-center mt-3">
+                  <h3 class="fw-bolder">Poornima Gururaja</h3>
+                  <p>Poornima Gururaja is an exponent of the Pandanallur/Tanjore School of dance, a disciple of Guru
+                      Smt. Narmada who trained under the legendary Guru Sri Kittappa Pillai of Tanjore. She is the
+                      founder and artistic director of the Pallavi School performing arts, based in Boston. She
+                      founded
+                      the Kalasindhu Academy of Dance and Related Arts in 2009. Poornima Gururaja holds an MBA from
+                      Brandeis University, USA and has worked as a marketing professional at Hewlett Packard.
+                  </p>
+              </div>
+          </div>
+          </li>
+        </ul>
       </div>
     </div>
-
   </section>
   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
-<script>
-  function toggleDropdown(index) {
-    const dropdownContent = document.getElementById(`dropdown-${index}-content`);
-    const dropdown = dropdownContent.parentElement;
+  
 
-    if (dropdown.classList.contains('open')) {
-      dropdown.classList.remove('open');
-    } else {
-      dropdown.classList.add('open');
-    }
-  }
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <!-- aos -->
+    <script src="assets/styles/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Splide('.splide', {
+          direction: 'ttb', // Vertical slider
+          height: '100vh', // Adjust height as needed
+          wheel: true, // Enable mouse wheel navigation
+        }).mount();
+      });
+    </script>
+    
+    <script>AOS.init();</script>
 </body>
 </html>

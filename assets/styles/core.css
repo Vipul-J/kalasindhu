@@ -1,7 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
-*{
+* {
     font-family: 'Nunito', sans-serif;
+}
+
+.abtHero-wrapper {
+    position: relative;
+}
+
+.image-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.image-overlay img {
+    display: block;
+}
+
+.parallax-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.choreographer-text {
+    position: absolute;
+    bottom: 0px; 
+    left: 50%;
+    letter-spacing: 2pt;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.768);
+    font-weight: bolder;
+    padding: 0px 0px;
+}
+
+.splide__arrow--prev,
+.splide__arrow--next {
+    display: none;
+}
+
+.splide__pagination__page {
+    background-color: rgb(255, 255, 0);
+    border: 1PX solid rgb(252, 188, 12);
+}
+
+.splide__pagination__page.is-active {
+    background-color: rgb(255, 221, 0); 
 }
 
 /* navbar */
@@ -86,31 +131,31 @@
 
 .accordion-item {
     margin-bottom: 10px;
-    border: none; 
+    border: none;
 }
 
 .accordion-button {
-    background-color: rgba(36, 17, 10, 1); 
-    border: 1px solid  #ffd814; 
+    background-color: rgba(36, 17, 10, 1);
+    border: 1px solid #ffd814;
 }
 
 .accordion-button.collapsed {
-    background-color: rgba(36, 17, 10, 1); 
+    background-color: rgba(36, 17, 10, 1);
     border: 1px solid #ffd814;
     color: white;
 }
 
 .accordion-button:active {
     background-color: rgba(36, 17, 10, 1);
-  }
+}
 
 .accordion-button:focus {
     outline: none;
     box-shadow: none;
-  }
+}
 
 .accordion-body {
-    background-color: rgba(36, 17, 10, 1);  
+    background-color: rgba(36, 17, 10, 1);
     border: 1px solid #ffd814;
     color: white;
 }
@@ -125,8 +170,9 @@
     height: 0;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    border-left: 4px solid white; /* Change the arrow color to white */
-  }
+    border-left: 4px solid white;
+    /* Change the arrow color to white */
+}
 
 .splide__slide {
     position: relative;
@@ -218,27 +264,59 @@
 
 @media (max-width: 768px) {
     .splide__slide figcaption {
-      font-size: 8px !important;
+        font-size: 8px !important;
     }
+
     .splide__slide figcaption p {
         font-size: 6px !important;
-      }
-    .small-desc {
-      font-size: 5px;
     }
-  }
+
+    .small-desc {
+        font-size: 5px;
+    }
+
+    .splide__arrow--prev,
+    .splide__arrow--next {
+        display: none;
+    }
+
+    .splide__pagination__page {
+        background-color: yellow;
+    }
+
+    .splide__pagination__page.is-active {
+        background-color: brown;
+    }
+
+    .splide {
+        height: 50vh;
+    }
+
+    .choreographer-text {
+        position: absolute;
+        bottom: 0px !important;
+        left: 50%;
+        letter-spacing: 1pt;
+        transform: translateX(-50%);
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.768);
+        font-weight: bolder;
+        font-size: 1rem !important;
+        padding: 0px 0px;
+    }
+}
 
 
 
-  /* About Page */
-  .abtDesc-wrapper{
+/* About Page */
+.abtDesc-wrapper {
     background-image: url(/assets/images/abt2.png);
     background-repeat: no-repeat;
-    background-size: cover; 
-  }
+    background-size: cover;
+}
 
-  /* suupport Page */
-  .support-wrapper {
+/* suupport Page */
+.support-wrapper {
     background-image: url(/assets/images/support.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,4 +326,4 @@
     align-items: center;
     flex-direction: column;
     color: #ffffff;
-  }
+}
